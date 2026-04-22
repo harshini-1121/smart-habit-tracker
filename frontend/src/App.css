@@ -1,0 +1,350 @@
+/* General Body and Container Styling */
+body {
+  font-family: 'Inter', sans-serif; /* Modern, clean sans-serif font */
+  background-color: #F8FAFC; /* Light blue-gray background */
+  margin: 0;
+  padding: 20px;
+  color: #1F2937; /* Darker text for better readability */
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 720px; /* Slightly wider container */
+  margin: 40px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08); /* Softer, more pronounced shadow */
+}
+
+/* Header Styling */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #E2E8F0; /* Lighter border */
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #1F2937;
+  margin: 0;
+}
+
+/* Form Elements */
+.habit-form {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.habit-form input {
+  flex: 1;
+  padding: 12px 15px;
+  border: 1px solid #CBD5E1; /* Muted border color */
+  border-radius: 8px; /* Slightly more rounded corners */
+  font-size: 1rem;
+  transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.habit-form input:focus {
+  outline: none;
+  border-color: #5F9B9C; /* Soft, professional teal-blue for focus */
+  box-shadow: 0 0 0 3px rgba(95, 155, 156, 0.2); /* Softer focus shadow */
+}
+
+/* Global Button Styling */
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: background-color 0.2s ease-in-out, transform 0.1s ease-in-out;
+  color: white; /* Default white text for colored buttons */
+}
+
+button:hover {
+  transform: translateY(-1px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* Specific Button Styles */
+.habit-form button {
+  background-color: #5F9B9C; /* Soft, professional teal-blue primary */
+}
+
+.habit-form button:hover {
+  background-color: #4A7C7D; /* Darker teal-blue on hover */
+}
+
+.btn-done {
+  background-color: #7DBA9A; /* Inviting, slightly muted success green */
+}
+
+.btn-done:hover {
+  background-color: #6BBF99; /* Darker success green */
+}
+
+.btn-miss {
+  background-color: #BF6B6B; /* Muted, impactful danger red */
+}
+
+.btn-miss:hover {
+  background-color: #A35E5E; /* Darker danger red */
+}
+
+.btn-logout {
+  background: none;
+  color: #6B7280; /* Muted text color */
+  text-decoration: none; /* Remove underline */
+  padding: 8px 12px;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.btn-logout:hover {
+  color: #1F2937;
+  text-decoration: underline; /* Underline on hover for clarity */
+  background: none;
+  transform: none; /* No transform for logout button */
+}
+
+
+/* Habit Item and List Styling */
+.habit-list {
+  display: grid;
+  gap: 25px; /* More space between habit cards */
+}
+
+.habit-card {
+  background: #fff;
+  border: 1px solid #E2E8F0;
+  border-radius: 12px;
+  padding: 20px 25px; /* More padding */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05); /* Softer shadow */
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.habit-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+.habit-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px; /* Space between item and chart */
+}
+
+.habit-info h3 {
+  margin: 0;
+  font-size: 1.3rem;
+  color: #1F2937;
+  font-weight: 600;
+}
+
+.habit-info p {
+  margin: 5px 0 0;
+  font-size: 0.9rem;
+  color: #4B5563;
+}
+
+.habit-info p span {
+  font-weight: 700;
+  color: #5F9B9C; /* Highlight streak count with primary teal-blue */
+}
+
+.habit-actions {
+  display: flex;
+  gap: 10px; /* Space between action buttons */
+}
+
+/* Consistency Chart Styling */
+.chart-section {
+  margin-top: 20px;
+  padding: 15px;
+  background: #F8FAFC; /* Light background for chart area */
+  border-radius: 8px;
+  border: 1px solid #E2E8F0;
+}
+
+.chart-container p {
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+  color: #4B5563;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chart-container strong {
+  font-size: 1.1rem;
+  color: #1F2937;
+  font-weight: 700;
+}
+
+.chart-container > div { /* Grid for consistency squares */
+  display: grid; /* Ensure this is a grid */
+  grid-template-columns: repeat(7, 14px); /* Slightly larger squares */
+  gap: 3px;
+  padding-top: 5px;
+}
+
+/* Colors for the consistency chart squares */
+.chart-container > div .chart-square.done {
+  background-color: #7DBA9A; /* Inviting success green */
+}
+.chart-container > div .chart-square.missed {
+  background-color: #BF6B6B; /* Muted danger red */
+}
+.chart-container > div .chart-square {
+  background-color: #E5E7EB; /* Light gray for no data */
+}
+
+
+/* Authentication Card Styling */
+.auth-card {
+  max-width: 400px; /* Wider auth card */
+  margin: 80px auto;
+  padding: 40px;
+  background: white;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.auth-card h2 {
+  font-size: 2rem;
+  color: #1F2937;
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+
+.auth-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Space between form fields */
+}
+
+.auth-card input {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 0; /* Remove default margin from input */
+  border: 1px solid #CBD5E1;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 1rem;
+  transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.auth-card input:focus {
+  outline: none;
+  border-color: #5F9B9C; /* Primary teal-blue */
+  box-shadow: 0 0 0 3px rgba(95, 155, 156, 0.2); /* Softer focus shadow */
+}
+
+.auth-card button {
+  width: 100%;
+  background-color: #5F9B9C; /* Primary teal-blue */
+  margin-top: 10px;
+}
+
+.auth-card button:hover {
+  background-color: #4A7C7D; /* Darker primary teal-blue on hover */
+}
+
+.auth-card p {
+  cursor: pointer;
+  margin-top: 25px;
+  font-size: 0.95rem;
+  color: #4B5563;
+  text-decoration: none; /* Remove default underline */
+  transition: color 0.2s ease-in-out;
+}
+
+.auth-card p:hover {
+  color: #5F9B9C; /* Primary teal-blue on hover */
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Global Actions (Simulate Reminder) */
+.global-actions {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.btn-sim-rem {
+  background-color: #DDAA70; /* Warm, earthy gold for warning/simulation */
+  width: auto; /* Auto width based on content */
+  display: inline-block; /* Allow padding to take effect */
+}
+
+.btn-sim-rem:hover {
+  background-color: #C79F6F; /* Darker earthy gold */
+}
+
+/* Debug Footer Styling */
+.debug-footer {
+  display: flex;
+  gap: 8px; /* Tighter gap for debug buttons */
+  border-top: 1px solid #E2E8F0;
+  padding-top: 15px;
+  margin-top: 20px;
+}
+
+.debug-footer button {
+  font-size: 0.75rem; /* Smaller font for debug buttons */
+  padding: 8px 10px;
+  flex: 1;
+  border-radius: 6px; /* Slightly less rounded */
+  font-weight: 500;
+  opacity: 0.8; /* Slightly muted */
+}
+
+.debug-footer button:hover {
+  opacity: 1;
+}
+
+.btn-almost {
+  background-color: #8D7BA3; /* Muted plum for almost missed */
+}
+.btn-almost:hover { background-color: #7B6A8C; /* Darker muted plum */ }
+
+.btn-gap {
+  background-color: #4B5563; /* Dark gray for 3-day miss (kept as a neutral utility) */
+}
+.btn-gap:hover { background-color: #374151; /* (kept) */ }
+
+.btn-reset {
+  background-color: #9CA3AF; /* Light gray for reset (kept as a neutral utility) */
+}
+.btn-reset:hover { background-color: #6B7280; /* (kept) */ }
+
+
+/* Empty State Styling */
+.empty-state {
+  text-align: center;
+  color: #6B7280;
+  padding: 50px 20px;
+  font-size: 1.1rem;
+  background-color: #F8FAFC;
+  border-radius: 12px;
+  margin-top: 30px;
+  border: 1px dashed #CBD5E1; /* Dashed border for empty state */
+}
+
+/* Utility classes (from original, keeping for reference if needed elsewhere) */
+.subtitle {
+  color: #6B7280;
+  font-size: 0.9rem;
+  margin-top: -10px;
+}
