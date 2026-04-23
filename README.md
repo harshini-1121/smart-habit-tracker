@@ -94,10 +94,13 @@ npm start
 ### 4. Access the Application
 
 Backend runs on: [http://127.0.0.1:8000](http://127.0.0.1:8000)
+
 Frontend runs on: [http://localhost:3000](http://localhost:3000)
 
 ## Testing
+
 To run backend tests:
+
 pytest
 
 ## Future Enhancements
