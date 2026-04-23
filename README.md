@@ -1,20 +1,17 @@
 
-# Smart Habit Tracker
+## Smart Habit Tracker
 
 A full-stack habit tracking application that helps users build consistency by managing daily habits, tracking progress, and maintaining structured records.
 
 
 ## Problem Statement
-
 Maintaining habits consistently is challenging due to lack of tracking systems and progress visibility. Users often fail to stay consistent because they cannot monitor their performance effectively.
 
 
 ## Solution
-
 This project provides a structured habit tracking system where users can create, manage, and monitor their habits. The system ensures better consistency by tracking daily progress and storing data efficiently.
 
 ## Features
-
 * Create, update, and delete habits
 * Track daily habit completion
 * Backend API built with FastAPI
@@ -23,7 +20,6 @@ This project provides a structured habit tracking system where users can create,
 * Clean separation of frontend and backend
 
 ## Tech Stack
-
 Frontend: React, JavaScript, CSS
 Backend: FastAPI (Python)
 Database: SQLite
@@ -31,7 +27,6 @@ API Testing: Pytest
 Version Control: Git, GitHub
 
 ## Project Structure
-
 ```id="proj-structure"
 smart-habit-tracker/
 
@@ -64,7 +59,6 @@ README.md
 ```
 
 ## System Architecture
-
 The application follows a client-server architecture.
 
 Frontend (React) handles user interaction and sends requests to the backend API.
@@ -103,12 +97,10 @@ Backend runs on: [http://127.0.0.1:8000](http://127.0.0.1:8000)
 Frontend runs on: [http://localhost:3000](http://localhost:3000)
 
 ## Testing
-
 To run backend tests:
 pytest
 
 ## Future Enhancements
-
 * User authentication system
 * Habit reminders and notifications
 * Data visualization dashboard
