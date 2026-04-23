@@ -114,7 +114,7 @@ pytest
 
 This video demonstrates the complete workflow of the Smart Habit Tracker, including authentication, habit tracking, analytics, and smart reminder simulation.
 
-[▶️ Watch Demo](https://drive.google.com/file/d/1HWdB8hu1Gxo9j2C4_XuqQa0hWtW9JGi1/view?usp=sharing)
+[Watch Demo](https://drive.google.com/file/d/1HWdB8hu1Gxo9j2C4_XuqQa0hWtW9JGi1/view?usp=sharing)
 
 ## Author
 Harshini T N
