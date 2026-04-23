@@ -3,19 +3,15 @@
 
 A full-stack habit tracking application that helps users build consistency by managing daily habits, tracking progress, and maintaining structured records.
 
----
 
 ## Problem Statement
 
 Maintaining habits consistently is challenging due to lack of tracking systems and progress visibility. Users often fail to stay consistent because they cannot monitor their performance effectively.
 
----
 
 ## Solution
 
 This project provides a structured habit tracking system where users can create, manage, and monitor their habits. The system ensures better consistency by tracking daily progress and storing data efficiently.
-
----
 
 ## Features
 
@@ -26,8 +22,6 @@ This project provides a structured habit tracking system where users can create,
 * Modular frontend using React
 * Clean separation of frontend and backend
 
----
-
 ## Tech Stack
 
 Frontend: React, JavaScript, CSS
@@ -35,8 +29,6 @@ Backend: FastAPI (Python)
 Database: SQLite
 API Testing: Pytest
 Version Control: Git, GitHub
-
----
 
 ## Project Structure
 
@@ -71,8 +63,6 @@ runapplication.bat        # Script to run application
 README.md
 ```
 
----
-
 ## System Architecture
 
 The application follows a client-server architecture.
@@ -84,15 +74,12 @@ Flow:
 
 User → React Frontend → FastAPI Backend → SQLite Database → Response → UI
 
----
 
 ## Installation and Setup
 
 ### 1. Clone the repository
 
 git clone [https://github.com/harshini-1121/smart-habit-tracker.git](https://github.com/harshini-1121/smart-habit-tracker.git)
-
----
 
 ### 2. Setup Backend
 
@@ -102,8 +89,6 @@ pip install -r requirements.txt
 
 uvicorn main:app --reload
 
----
-
 ### 3. Setup Frontend
 
 cd ../frontend
@@ -112,22 +97,15 @@ npm install
 
 npm start
 
----
-
 ### 4. Access the Application
 
 Backend runs on: [http://127.0.0.1:8000](http://127.0.0.1:8000)
 Frontend runs on: [http://localhost:3000](http://localhost:3000)
 
----
-
 ## Testing
 
 To run backend tests:
-
 pytest
-
----
 
 ## Future Enhancements
 
@@ -136,8 +114,6 @@ pytest
 * Data visualization dashboard
 * AI-based habit suggestions
 * Deployment on cloud platform
-
----
 
 ## Author
 
