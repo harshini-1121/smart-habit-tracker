@@ -108,7 +108,7 @@ pytest
 * Deployment on cloud platform
 
 ## Author
-
 Harshini T N
+
 Email: [harshinitn21@gmail.com](mailto:harshinitn21@gmail.com)
 
